@@ -1,4 +1,4 @@
-# Multiple authentication on Supabase
+# Multiple authentication on Supabase using React
 
 ## Supabase - Set Up a Project and Profile table
 
