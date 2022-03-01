@@ -4,7 +4,7 @@ import SignUpForm from './SignUpForm'
 import MagicLinkForm from './MagicLinkForm'
 import LoginForm from './LoginForm'
 
-const Login = () => {
+const Auth = () => {
   
   return (
     <Grid templateColumns='repeat(3,400px)' w='auto' h='100%' gap={70} placeContent='center'>
@@ -21,4 +21,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default Auth
