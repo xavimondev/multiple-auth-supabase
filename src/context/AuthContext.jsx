@@ -23,9 +23,7 @@ export const AuthProvider = ({ children }) => {
         navigate('/login', { replace: true })
       }
     }
-
     checkUser()
-
     return () => {
       authListener?.unsubscribe()
     }

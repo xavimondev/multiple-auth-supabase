@@ -6,7 +6,6 @@ import useProfile from '../hooks/useProfile'
 import { logout } from '../services/auth'
 
 const Welcome = () => {
-  const { user } = useContext(AuthContext)
   const userProfile = useProfile()
 
   const handleLogout = async () => await logout()
@@ -18,15 +17,10 @@ const Welcome = () => {
           Welcome
         </Heading>
         <Text fontSize='sm' color='#718096' fontWeight={'600'}>
-          User: { userProfile
-          ? userProfile.username
-          : user
-            ? user.email
-            : 'Anonymous'
-          }
+          { userProfile ? userProfile.username : 'Sin Datos' }
         </Text>
-        <Button onClick={handleLogout}>Logout</Button>
       </Box>
+      <Button onClick={handleLogout}>Logout</Button>
     </Flex>
   )
 }
